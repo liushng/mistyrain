@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div class="home">
+		<Head></Head>
+		<Topbg></Topbg>
+	</div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Head from "@/components/Head";
+import Topbg from "@/components/Topbg";
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+	name:"home",
+	data() {
+		return {
+			
+		}
+	},
+	props:{},
+	computed: {},
+	components:{
+		Head,
+		Topbg
+	},
+	created() {},
+	mounted() {},
+	methods: {},
+	watch: {},
+	destroyed() {},
 }
 </script>
+<style lang="scss" scoped>
+	.home{
+		position: relative;
+	}
+</style>
