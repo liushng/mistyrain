@@ -1,11 +1,11 @@
 <template>
-    <div class="github">
+    <div class="github" :style="{background:`rgba(0,122,255,${opacity})`}">
         <a href="https://github.com/liushng/" target="_blank">
             <svg
                 width="66"
                 height="66"
                 viewBox="0 0 250 250"
-                style="color:#fff; position: absolute; top: 0; border: 0; right: 0;"
+                style="color:#fff;"
                 :style="{'fill':color}"
                 aria-hidden="true"
                 >
@@ -37,6 +37,10 @@ export default {
         color:{
             type:String,
             default:"#2a4bf0"
+        },
+        opacity:{
+            type:Number,
+            default:0
         }
     },
     computed: {},
@@ -49,4 +53,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.github{
+    width: 66px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0
+}
 </style>

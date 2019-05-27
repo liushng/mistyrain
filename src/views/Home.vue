@@ -20,7 +20,9 @@ export default {
 		Head,
 		Topbg
 	},
-	created() {},
+	created() {
+		
+	},
 	mounted() {},
 	methods: {},
 	watch: {},
@@ -30,5 +32,9 @@ export default {
 <style lang="scss" scoped>
 	.home{
 		position: relative;
+		height: 2000px;
+		.content{
+			background: #f6f6f6
+		}
 	}
 </style>

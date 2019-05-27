@@ -2,8 +2,8 @@
     <div class="top-bg">
         <swiper class="swiper" :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
             <!-- slides -->
-            <swiper-slide>
-                <img :src="imgUrl">
+            <swiper-slide v-for="(item,index) in imgArr" :key="index">
+                <img :src="item">
             </swiper-slide>
             <swiper-slide>
                 <div class="bg"></div>
@@ -38,7 +38,15 @@ export default {
     name:"TopBg",
     data() {
         return {
-            imgUrl:"http://topmiss.cn/images/bg2.jpg",
+            imgArr:[
+                "http://topmiss.cn/images/bg1.jpg",
+                "http://topmiss.cn/images/bg2.jpg",
+                "http://topmiss.cn/images/bg3.jpg",
+                "http://topmiss.cn/images/bg4.jpg",
+                "http://topmiss.cn/images/bg5.jpg",
+                "http://topmiss.cn/images/bg6.jpg",
+                "http://topmiss.cn/images/bg7.jpg",
+            ],
             swiperOption:{
                 autoplay: {
                     delay: 5000,//1秒切换一次
@@ -85,6 +93,10 @@ export default {
         img{
             width: 100%;
             min-height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%)
         }
         .bg{
             width: 100%;
