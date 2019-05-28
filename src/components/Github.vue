@@ -1,5 +1,5 @@
 <template>
-    <div class="github" :style="{background:`rgba(0,122,255,${opacity})`}">
+    <div class="github" :style="{background:`rgba(44,62,80,${opacity})`}">
         <a href="https://github.com/liushng/" target="_blank">
             <svg
                 width="66"

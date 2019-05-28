@@ -2,11 +2,14 @@
 	<div class="home">
 		<Head></Head>
 		<Topbg></Topbg>
+		<router-view />
+		<QrCode></QrCode>	
 	</div>
 </template>
 <script>
 import Head from "@/components/Head";
 import Topbg from "@/components/Topbg";
+import QrCode from "@/components/QrCode";
 export default {
 	name:"home",
 	data() {
@@ -18,7 +21,8 @@ export default {
 	computed: {},
 	components:{
 		Head,
-		Topbg
+		Topbg,
+		QrCode
 	},
 	created() {
 		

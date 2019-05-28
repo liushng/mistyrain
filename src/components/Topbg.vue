@@ -27,7 +27,29 @@
             :hoverEffect="true"
             hoverMode="grab"
             :clickEffect="true"
-            clickMode="push"></vue-particles>
+            clickMode="push">
+        </vue-particles>
+        <div class="text">
+            <h3>真正的大师永远都怀着一颗学徒的心</h3>
+            <div class="text-swiper">
+                <swiper class="swiper" :options="textSwiperOption" ref="myTextSwiper" @someSwiperEvent="callback">
+                    <!-- slides -->
+                    <swiper-slide>
+                        <div>只有行动才能说明一切</div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>绝对不要坐等胜利的到来。</div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>倘若你迷失在黑暗中，除了前行别无他法</div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div>时间不在于你拥有多少，而在于你怎样使用</div>
+                    </swiper-slide>
+                </swiper>
+            </div>
+        </div>
+        
     </div>
 </template>
 <script>
@@ -52,6 +74,14 @@ export default {
                     delay: 5000,//1秒切换一次
                 },
                 effect : 'fade',
+                loop:true
+            },
+            textSwiperOption:{
+                autoplay: {
+                    delay: 3000,//1秒切换一次
+                },
+                effect : 'flip',
+                direction : 'vertical',
                 loop:true
             }
         }
@@ -107,6 +137,35 @@ export default {
     .lizi{
         position: relative;
         z-index: 2;
+    }
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        color: #ffffff;
+        text-align: center;
+        min-width: 700px;
+        h3{
+            font-size: 36px;
+            display: block;
+            width: 100%;
+            margin-bottom: 20px;
+            font-weight: 800;
+            letter-spacing: 5px;
+            text-shadow: 4px 4px 0px rgba(255,222,148,0.3), 8px 8px 0px rgba(8,128,215,0.1); //relief shade effect 
+        }
+        .text-swiper{
+            font-size: 22px;
+            letter-spacing: 5px;
+            display: block;
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            position:relative;
+            z-index: 100;
+        }
     }
 }
 </style>

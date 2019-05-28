@@ -5,7 +5,9 @@
 			<span>刘盛</span>
 		</div>
 		<div class="right">
-			<div class="btn" :class="{active:active==index}" v-for="(item,index) in btnArrReverse" :key="index" @click="active=index">{{item.title}}</div>
+			<touch-ripple v-for="(item,index) in btnArrReverse" :key="index" @click.native="active=index">
+				<div class="btn" :class="{active:active==index}">{{item.title}}</div>
+			</touch-ripple>
 			<github :opacity="opacity"></github>
 		</div>
     </div>
@@ -64,7 +66,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$padding:200px;
+$padding:10vw;
 .header {
 	width: 100%;
 	height: 66px;
@@ -95,10 +97,13 @@ $padding:200px;
 		flex: 1;
 		height: 100%;
 		padding-right: $padding;
-		.btn{
+		.v-touch-ripple{
 			margin: 0 20px;
-			height: 100%;
 			min-width: 80px;
+			height: 100%;
+		}
+		.btn{
+			height: 100%;
 			padding: 0 20px;
 			display: flex;
 			justify-content: center;
