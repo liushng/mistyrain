@@ -1,6 +1,6 @@
 <template>
     <div class="github" :style="{background:`rgba(44,62,80,${opacity})`}">
-        <a href="https://github.com/liushng/" target="_blank">
+        <a href="https://github.com/liushng/" target="_blank" class="github-corner">
             <svg
                 width="66"
                 height="66"
@@ -58,6 +58,20 @@ export default {
     height: 100%;
     position: absolute;
     right: 0;
-    top: 0
+    top: 0;
+    .github-corner:hover .octo-arm{
+        animation: octocat-wave 560ms ease-in-out
+    }
+    @keyframes octocat-wave{
+        0%,100%{
+            transform:rotate(0)
+        }
+        20%,60%{
+            transform:rotate(-25deg)
+        }
+        40%,80%{
+            transform:rotate(10deg)
+        }
+    }
 }
 </style>
