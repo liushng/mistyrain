@@ -1,7 +1,7 @@
 <template>
     <div class="header" :style="{background:headBg}">
 		<div class="left">
-			<img src="//www.topmiss.cn/images/panda.jpg" alt="">
+			<img src="//assets.topmiss.cn/images/panda.jpg" alt="">
 			<span>刘盛</span>
 		</div>
 		<div class="right">

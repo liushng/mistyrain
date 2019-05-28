@@ -39,13 +39,13 @@ export default {
     data() {
         return {
             imgArr:[
-                "http://topmiss.cn/images/bg1.jpg",
-                "http://topmiss.cn/images/bg2.jpg",
-                "http://topmiss.cn/images/bg3.jpg",
-                "http://topmiss.cn/images/bg4.jpg",
-                "http://topmiss.cn/images/bg5.jpg",
-                "http://topmiss.cn/images/bg6.jpg",
-                "http://topmiss.cn/images/bg7.jpg",
+                "http://assets.topmiss.cn/images/bg1.jpg",
+                "http://assets.topmiss.cn/images/bg2.jpg",
+                "http://assets.topmiss.cn/images/bg3.jpg",
+                "http://assets.topmiss.cn/images/bg4.jpg",
+                "http://assets.topmiss.cn/images/bg5.jpg",
+                "http://assets.topmiss.cn/images/bg6.jpg",
+                "http://assets.topmiss.cn/images/bg7.jpg",
             ],
             swiperOption:{
                 autoplay: {
