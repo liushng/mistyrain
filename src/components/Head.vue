@@ -1,5 +1,6 @@
 <template>
     <div class="header" :style="{background:headBg}">
+		<div class="progress" :style="{width}"></div>	
 		<div class="left">
 			<img src="//assets.topmiss.cn/images/panda.jpg" alt="">
 			<span>刘盛</span>
@@ -34,7 +35,8 @@ export default {
 			],
 			active:3,
 			headBg:"rgba(42, 75, 240,0)",
-			opacity:0
+			opacity:0,
+			width:0
 		};
     },
     props: {},
@@ -49,12 +51,15 @@ export default {
     created() {
 		document.addEventListener('scroll',(e)=>{
 			let top = document.documentElement.scrollTop || document.body.scrollTop;
+			let screenHeight = window.screen.height ;
+			let allHeight = Math.max(document.body.scrollHeight,document.documentElement.scrollHeight);
 			let opacity = 0 ;
 			if(top<=200){
 				opacity = top/200 ;
 			}else{
 				opacity = 1 ;
 			}
+			this.width = top*100/(allHeight-screenHeight) + "%";
 			this.headBg = `rgba(42, 75, 240,${opacity})`;
 			this.opacity = opacity ;
 		})
@@ -125,4 +130,15 @@ $padding:10vw;
 		}
 	}
 }
+.progress{
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 5;
+		height: 3px;
+		width: 100%;
+		background: #ff9800;
+		transition: width 0.5s;
+		border-radius: 2px
+	}
 </style>

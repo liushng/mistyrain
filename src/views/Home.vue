@@ -2,8 +2,13 @@
 	<div class="home">
 		<Head></Head>
 		<Topbg></Topbg>
-		<router-view />
-		<QrCode></QrCode>	
+		<div class="content">
+			<router-view />
+		</div>
+		<QrCode class="qr-code"></QrCode>
+		<footer>
+			正在申请备案
+		</footer>
 	</div>
 </template>
 <script>
@@ -33,12 +38,34 @@ export default {
 	destroyed() {},
 }
 </script>
-<style lang="scss" scoped>
+<style scoped lang="scss">
 	.home{
 		position: relative;
-		height: 2000px;
+		background: #f6f6f6;
 		.content{
-			background: #f6f6f6
+			width: 80vw;
+			min-height: calc(60vh - 300px);
+			margin-top: -30px;
+			margin-left: 10vw;
+			position: relative;
+			z-index: 4;
+			background: #ffffff;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+			border-radius: 6px;
+			color: #1b2735;
+			border: 1px solid transparent;
+		}
+		.QrCode{
+			margin-top: -30px;
+			padding-top: 50px;
+		}
+		footer{
+			height: 60px;
+			background: #1b2735;
+			color: #f6f6f6;
+			display: flex;
+			justify-content: center;
+			align-items: center
 		}
 	}
 </style>

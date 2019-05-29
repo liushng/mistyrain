@@ -61,8 +61,8 @@ export default {
         }
         .content{
             img{
-                width: 200px;
-                height: 200px;
+                width: 180px;
+                height: 180px;
             }
         }
     }

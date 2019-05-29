@@ -43,13 +43,9 @@
                     <swiper-slide>
                         <div>倘若你迷失在黑暗中，除了前行别无他法</div>
                     </swiper-slide>
-                    <swiper-slide>
-                        <div>时间不在于你拥有多少，而在于你怎样使用</div>
-                    </swiper-slide>
                 </swiper>
             </div>
         </div>
-        
     </div>
 </template>
 <script>
