@@ -6,7 +6,7 @@
                 <img src="@/assets/images/code.png" alt="">
             </div>
         </div>
-        <div class="item">
+        <!-- <div class="item">
             <div class="title">微信小程序</div>
             <div class="content">
                 <img src="@/assets/images/code.png" alt="">
@@ -17,7 +17,7 @@
             <div class="content">
                 <img src="@/assets/images/code.png" alt="">
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 <script>
@@ -44,7 +44,7 @@ export default {
     height: 300px;
     box-sizing: border-box;
     padding: 20px 10vw;
-    background: linear-gradient(to right, #0880d7, #5246e2);
+    background: linear-gradient(45deg, rgba(8,128,215,0.8), rgba(82,70,226,0.8));
     overflow: hidden;
     color:#ffffff;
     display: flex;
@@ -54,10 +54,11 @@ export default {
             font-size: 30px;
             font-weight: bold;
             margin-bottom: 20px;
-            background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#85e246));
+            background: linear-gradient(60deg,red,orange,yellow,green,blue,#9c27b0,violet);
             background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-family: "Impact"
+            font-family: "Impact";
+            user-select: none;
         }
         .content{
             img{

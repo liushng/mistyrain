@@ -23,17 +23,17 @@ export default {
 				{
 					title:"首页",
 				},
-				{
-					title:"归档",
-				},
-				{
-					title:"文档",
-				},
-				{
-					title:"简历",
-				},
+				// {
+				// 	title:"归档",
+				// },
+				// {
+				// 	title:"文档",
+				// },
+				// {
+				// 	title:"简历",
+				// },
 			],
-			active:3,
+			active:0,
 			headBg:"rgba(42, 75, 240,0)",
 			opacity:0,
 			width:0

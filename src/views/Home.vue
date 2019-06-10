@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<Head></Head>
+		<Head class="head"></Head>
 		<Topbg></Topbg>
 		<div class="content">
 			<router-view />
@@ -42,6 +42,9 @@ export default {
 	.home{
 		position: relative;
 		background: #f6f6f6;
+		.head{
+			z-index: 5;
+		}
 		.content{
 			width: 80vw;
 			min-height: calc(60vh - 300px);
@@ -65,7 +68,8 @@ export default {
 			color: #f6f6f6;
 			display: flex;
 			justify-content: center;
-			align-items: center
+			align-items: center;
+			user-select: none;
 		}
 	}
 </style>
