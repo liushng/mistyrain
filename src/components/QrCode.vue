@@ -44,21 +44,22 @@ export default {
     height: 300px;
     box-sizing: border-box;
     padding: 20px 10vw;
-    background: linear-gradient(45deg, rgba(8,128,215,0.8), rgba(82,70,226,0.8));
+    background: linear-gradient(45deg, #141e30, #243b55);
     overflow: hidden;
     color:#ffffff;
     display: flex;
     .item{
         margin-right: 30px;
         .title{
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 20px;
-            background: linear-gradient(60deg,red,orange,yellow,green,blue,#9c27b0,violet);
+            background: linear-gradient(60deg,#ffffff,#cccccc);
             background-clip: text;
             -webkit-text-fill-color: transparent;
             font-family: "Impact";
             user-select: none;
+            text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.1)
         }
         .content{
             img{

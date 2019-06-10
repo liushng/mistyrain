@@ -1,11 +1,11 @@
 <template>
-    <div class="github" :style="{background:`rgba(0,128,255,${opacity})`}">
+    <div class="github">
         <a href="https://github.com/liushng/" target="_blank" class="github-corner">
             <svg
                 width="66"
                 height="66"
                 viewBox="0 0 250 250"
-                style="color:#fff;"
+                style="color:#2a4bf0;"
                 :style="{'fill':color}"
                 aria-hidden="true"
                 >
@@ -36,7 +36,7 @@ export default {
     props:{
         color:{
             type:String,
-            default:"#2a4bf0"
+            default:"#ffffff"
         },
         opacity:{
             type:Number,
