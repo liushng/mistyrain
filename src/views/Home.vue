@@ -7,7 +7,7 @@
 		</div>
 		<QrCode class="qr-code"></QrCode>
 		<footer>
-			正在申请备案
+			蜀ICP备19017670号
 		</footer>
 	</div>
 </template>
